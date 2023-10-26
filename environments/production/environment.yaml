@@ -1,9 +1,29 @@
 version: 1.0
 app:
-  instances: 1
-  version: 500723ca-6e7c-46cd-9876-6eb46c5f0054
+  instances: 
+    min: 1
+    max: 2
+  resources:
+    cpu: 1
+  version: 1.0-SNAPSHOT-20230511151602
   env:
     - name: JVM_ARGS
-      value: "-DenvironmentType=prod"
-    - name: MAX
-      value: 5
+      value: "-DenvironmentType=stage"
+    - name: io_openliberty_sample_system_inMaintenance
+      value: "false"
+    - name: DBHost
+      value: "ec2-34-204-61-161.compute-1.amazonaws.com"
+    - name: DBName
+      value: MSGRDB
+    - name: DBPort
+      value: "60005"
+    - name: DBUser
+      value: db2inst1
+    - name: DBPass
+      value: "{aes}AODi7cxlV9GPtNrP8LvYf92NjqP1JwVoDx/XuQE3VkaGaFIWAGugwRWLft+zZaD2VQ=="
+    - name: ldapHost
+      value: "ec2-34-204-61-161.compute-1.amazonaws.com"
+    - name: ldapPort
+      value: "9389"
+    - name: ldapSSL
+      value: "false"
