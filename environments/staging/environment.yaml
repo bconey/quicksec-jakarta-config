@@ -20,7 +20,7 @@ app:
     - name: DBUser
       value: db2inst1
     - name: DBPass
-      value: "{aes}AODi7cxlV9GPtNrP8LvYf92NjqP1JwVoDx/XuQE3VkaGaFIWAGugwRWLft+zZaD2VQ=="
+      value: "{aes}AOj0Vd9B/slcxVxQdc7wNhZl6GF2JMy6tMu3hISuxeMExQkNVbzRrxVhKiDxd+MIDA=="
     - name: ldapHost
       value: "ec2-34-204-61-161.compute-1.amazonaws.com"
     - name: ldapPort
