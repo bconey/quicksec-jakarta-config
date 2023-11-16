@@ -5,7 +5,7 @@ app:
     max: 2
   resources:
     cpu: 1
-  version: 4aa5a057-8269-41d5-b83b-d76c320b477e
+  version: 352d226c-25d3-460e-93f7-061515fdd0e8
   env:
     - name: JVM_ARGS
       value: "-DenvironmentType=stage"
